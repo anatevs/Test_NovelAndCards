@@ -17,7 +17,7 @@ MonoBehaviour:
     Resources:
     - name: Dialogue
       pathPrefix: TextPrinters
-      guid: 1bc08ccd31adff6439e97161aa6e1d8b
+      guid: 97a0fccc566ee4c458a200502e6bedbd
   - Id: TextPrinters/00db6c17-6588-43b8-8b76-e839f41cbd24
     Resources:
     - name: Fullscreen
@@ -149,3 +149,29 @@ MonoBehaviour:
     - name: Dialogue1
       pathPrefix: Scripts
       guid: 7cf219a7a0fc64d45a155d8d1b1eb4de
+  - Id: Characters/58aad44c-df70-4f6f-b2ea-398c4e4743df
+    Resources:
+    - name: Portrait
+      pathPrefix: Characters/SchoolGirl
+      guid: 44d2293b70fa08743a61ce987b2ef1ed
+  - Id: Characters/0d86efcb-87a0-4d06-a6ec-a0cd72be1e46
+    Resources:
+    - name: Portrait
+      pathPrefix: Characters/CollegeStudent
+      guid: 395be38b1a13fc247a062c90fd6c01ed
+  - Id: Characters/e3258e84-b580-471e-8613-46f4a9a6c3e8
+    Resources:
+    - name: Portrait
+      pathPrefix: Characters/WitchNPC
+      guid: 1ad7f9830dd56d3479170d8e2bc65946
+  - Id: CharacterAvatars
+    Resources:
+    - name: SchoolGirl/Default
+      pathPrefix: CharacterAvatars
+      guid: 44d2293b70fa08743a61ce987b2ef1ed
+    - name: CollegeStudent/Default
+      pathPrefix: CharacterAvatars
+      guid: 7abf9b013b626604fa815bff02694b7c
+    - name: Witch/Default
+      pathPrefix: CharacterAvatars
+      guid: 1ad7f9830dd56d3479170d8e2bc65946
