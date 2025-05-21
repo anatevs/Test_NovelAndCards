@@ -69,7 +69,7 @@ MonoBehaviour:
     - CollegeStudent
     - Witch
     metas:
-    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+    - Implementation: Naninovel.GenericCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Loader:
         PathPrefix: Characters

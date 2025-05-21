@@ -1,7 +1,4 @@
-@char SchoolGirl.Idle pos:50,25
-Idle
-
-@char SchoolGirl.Fly pos:50,25
-Fly
+@char CollegeStudent avatar:CollegeStudent
+CollegeStudent: Hello!
 
 @stop

@@ -149,11 +149,14 @@ MonoBehaviour:
     - name: Dialogue1
       pathPrefix: Scripts
       guid: 7cf219a7a0fc64d45a155d8d1b1eb4de
+    - name: Dialogue0
+      pathPrefix: Scripts
+      guid: 12b17468e5dcfcd42a7e51513c22c93c
   - Id: Characters/58aad44c-df70-4f6f-b2ea-398c4e4743df
     Resources:
-    - name: Portrait
-      pathPrefix: Characters/SchoolGirl
-      guid: 44d2293b70fa08743a61ce987b2ef1ed
+    - name: SchoolGirl
+      pathPrefix: Characters
+      guid: 5da6ba947d7d1934eab9b8f65e5f616a
   - Id: Characters/0d86efcb-87a0-4d06-a6ec-a0cd72be1e46
     Resources:
     - name: Portrait
@@ -166,12 +169,12 @@ MonoBehaviour:
       guid: 1ad7f9830dd56d3479170d8e2bc65946
   - Id: CharacterAvatars
     Resources:
-    - name: SchoolGirl/Default
+    - name: SchoolGirl
       pathPrefix: CharacterAvatars
       guid: 44d2293b70fa08743a61ce987b2ef1ed
-    - name: CollegeStudent/Default
+    - name: CollegeStudent
       pathPrefix: CharacterAvatars
       guid: 7abf9b013b626604fa815bff02694b7c
-    - name: Witch/Default
+    - name: Witch
       pathPrefix: CharacterAvatars
       guid: 1ad7f9830dd56d3479170d8e2bc65946

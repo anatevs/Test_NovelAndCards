@@ -1,0 +1,14 @@
+Idle or flying character?
+@choice "Idle" goto:.Idle
+@choice "Flying" goto:.Fly
+@stop
+
+# Idle
+@char SchoolGirl.Idle pos:50,25 avatar:SchoolGirl
+SchoolGirl: Idle
+
+# Fly
+@char SchoolGirl.Fly pos:50,25 avatar:SchoolGirl
+SchoolGirl: Fly
+
+@stop

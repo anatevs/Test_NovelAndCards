@@ -45,6 +45,7 @@ namespace Naninovel.Commands
             if (!Assigned(AvatarTexturePath)) // Check if we can map current appearance to an avatar texture path.
             {
                 var avatarPath = $"{AssignedId}/{AssignedAppearance}";
+
                 if (ActorManager.AvatarTextureExists(avatarPath) && ActorManager.GetAvatarTexturePathFor(AssignedId) != avatarPath)
                     ActorManager.SetAvatarTexturePathFor(AssignedId, avatarPath);
                 else // Check if a default avatar texture for the character exists and assign if it does.
