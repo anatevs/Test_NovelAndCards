@@ -146,12 +146,12 @@ MonoBehaviour:
       guid: 735d6aa767879aa469134858c5b2f0a7
   - Id: Scripts
     Resources:
+    - name: CharacterChoiseDialogue
+      pathPrefix: Scripts
+      guid: 12b17468e5dcfcd42a7e51513c22c93c
     - name: Dialogue1
       pathPrefix: Scripts
       guid: 7cf219a7a0fc64d45a155d8d1b1eb4de
-    - name: Dialogue0
-      pathPrefix: Scripts
-      guid: 12b17468e5dcfcd42a7e51513c22c93c
   - Id: Characters/58aad44c-df70-4f6f-b2ea-398c4e4743df
     Resources:
     - name: SchoolGirl

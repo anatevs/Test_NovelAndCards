@@ -1,14 +1,21 @@
-Idle or flying character?
-@choice "Idle" goto:.Idle
-@choice "Flying" goto:.Fly
+Choose your character
+
+@choice "SchoolGirl" set:MainCharacter="SchoolGirl"
+@choice "CollegeStudent" set:MainCharacter="CollegeStudent"
+@choice "Witch" set:MainCharacter="Witch"
 @stop
 
-# Idle
-@char SchoolGirl.Idle pos:50,25 avatar:SchoolGirl
-SchoolGirl: Idle
+@char {MainCharacter}.Idle pos:50,25 avatar:{MainCharacter}
+@print "Hello!" author:{MainCharacter}
 
-# Fly
-@char SchoolGirl.Fly pos:50,25 avatar:SchoolGirl
-SchoolGirl: Fly
+
+; # Idle
+; @char SchoolGirl.Idle pos:50,25 avatar:SchoolGirl
+; SchoolGirl: Idle
+; @stop
+
+; # Fly
+; @char SchoolGirl.Fly pos:50,25 avatar:SchoolGirl
+; SchoolGirl: Fly
 
 @stop

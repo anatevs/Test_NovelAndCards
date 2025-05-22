@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050d909da8f293c4cac3351071715b4d, type: 3}
   m_Name: CustomVariablesConfiguration
   m_EditorClassIdentifier: 
-  PredefinedVariables: []
+  PredefinedVariables:
+  - name: MainCharacter
+    value: '"SchoolGirl"'
+  - name: NPC1
+    value: '"SchoolGirl"'
+  - name: NPC2
+    value: '"SchoolGirl"'

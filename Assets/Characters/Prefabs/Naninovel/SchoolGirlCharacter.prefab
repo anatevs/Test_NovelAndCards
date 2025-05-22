@@ -160,7 +160,7 @@ MonoBehaviour:
   onVisibilityChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1908850870069242641, guid: d11a785402529e0458c8b1f24905e340, type: 3}
+      - m_Target: {fileID: 6910071410577277801}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 0

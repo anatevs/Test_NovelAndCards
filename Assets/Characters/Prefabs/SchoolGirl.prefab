@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 5671074042809019823}
   - component: {fileID: 4822398208353430945}
   m_Layer: 0
-  m_Name: SchollGirlCharacter0
+  m_Name: SchoolGirl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8711184764569554572
 Transform:
   m_ObjectHideFlags: 0
