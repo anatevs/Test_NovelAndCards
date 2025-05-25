@@ -144,14 +144,20 @@ MonoBehaviour:
     - name: ScriptNavigatorUI
       pathPrefix: UI
       guid: 735d6aa767879aa469134858c5b2f0a7
+    - name: MapUI
+      pathPrefix: UI
+      guid: dea374c27eeb1a44c9c8ff9b93a5097a
   - Id: Scripts
     Resources:
     - name: CharacterChoiseDialogue
       pathPrefix: Scripts
       guid: 12b17468e5dcfcd42a7e51513c22c93c
-    - name: Dialogue1
+    - name: Location1
       pathPrefix: Scripts
-      guid: 7cf219a7a0fc64d45a155d8d1b1eb4de
+      guid: c39d84069b042134ca69e5ff1734f48f
+    - name: Location2
+      pathPrefix: Scripts
+      guid: 522d06208d31ae442ac84f95631920d9
   - Id: Characters/58aad44c-df70-4f6f-b2ea-398c4e4743df
     Resources:
     - name: SchoolGirl
@@ -159,22 +165,22 @@ MonoBehaviour:
       guid: 5da6ba947d7d1934eab9b8f65e5f616a
   - Id: Characters/0d86efcb-87a0-4d06-a6ec-a0cd72be1e46
     Resources:
-    - name: Portrait
-      pathPrefix: Characters/CollegeStudent
-      guid: 395be38b1a13fc247a062c90fd6c01ed
+    - name: CollegeStudent
+      pathPrefix: Characters
+      guid: 4d1d8f5572240e04bb7c82136056d360
   - Id: Characters/e3258e84-b580-471e-8613-46f4a9a6c3e8
     Resources:
-    - name: Portrait
-      pathPrefix: Characters/WitchNPC
-      guid: 1ad7f9830dd56d3479170d8e2bc65946
+    - name: Witch
+      pathPrefix: Characters
+      guid: 412bde8366077d84e81965ec9e3b0f10
   - Id: CharacterAvatars
     Resources:
-    - name: SchoolGirl
+    - name: SchoolGirl/Default
       pathPrefix: CharacterAvatars
       guid: 44d2293b70fa08743a61ce987b2ef1ed
-    - name: CollegeStudent
+    - name: CollegeStudent/Default
       pathPrefix: CharacterAvatars
       guid: 7abf9b013b626604fa815bff02694b7c
-    - name: Witch
+    - name: Witch/Default
       pathPrefix: CharacterAvatars
       guid: 1ad7f9830dd56d3479170d8e2bc65946

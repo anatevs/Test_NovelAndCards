@@ -1,0 +1,5 @@
+@char {MainCharacter}.Idle pos:25,25
+@char {NPC1}.Idle pos:75,25 rotation:0,180
+@print "Hello! You should go to the Location2 to update a quest" author:{NPC1}
+
+@stop

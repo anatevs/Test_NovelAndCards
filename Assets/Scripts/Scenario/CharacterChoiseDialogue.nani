@@ -1,21 +1,27 @@
 Choose your character
 
-@choice "SchoolGirl" set:MainCharacter="SchoolGirl"
-@choice "CollegeStudent" set:MainCharacter="CollegeStudent"
-@choice "Witch" set:MainCharacter="Witch"
+@choice "SchoolGirl" set:MainCharacter="SchoolGirl";NPC1="CollegeStudent";NPC2="Witch"
+@choice "CollegeStudent" set:MainCharacter="CollegeStudent";NPC1="SchoolGirl";NPC2="Witch"
+@choice "Witch" set:MainCharacter="Witch";NPC1="CollegeStudent";NPC2="SchoolGirl"
 @stop
 
-@char {MainCharacter}.Idle pos:50,25 avatar:{MainCharacter}
-@print "Hello!" author:{MainCharacter}
+@char {MainCharacter}.Idle pos:50,25
+@print "I see someone. I think it's {NPC1}" author:{MainCharacter}
+@goto Location1
 
+; @char {NPC1}.Idle
+; @char {NPC2}.Idle
+
+; @print "make hide"
+; @hide {NPC1}
 
 ; # Idle
-; @char SchoolGirl.Idle pos:50,25 avatar:SchoolGirl
+; @char SchoolGirl.Idle pos:50,25
 ; SchoolGirl: Idle
 ; @stop
 
 ; # Fly
-; @char SchoolGirl.Fly pos:50,25 avatar:SchoolGirl
+; @char SchoolGirl.Fly pos:50,25
 ; SchoolGirl: Fly
 
 @stop
