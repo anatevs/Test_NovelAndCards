@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2669537290980202855}
   - component: {fileID: 2669293111034755278}
   - component: {fileID: 8319756780988791371}
-  - component: {fileID: 9011359168572061183}
+  - component: {fileID: 6183350008628342773}
   m_Layer: 0
   m_Name: LocationButton
   m_TagString: Untagged
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &9011359168572061183
+--- !u!114 &6183350008628342773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,13 +131,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 954728091746991045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a348e333ca4299546801c997d8133b25, type: 3}
+  m_Script: {fileID: 11500000, guid: 74e5e0f3f6316954c89176b93b97b223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: 
-  playOnAwake: 0
-  disableWaitInput: 0
+  disableInteraction: 0
+  visibleOnAwake: 0
+  controlOpacity: 1
+  fadeTime: 0.3
+  ignoreTimeScale: 1
+  focusObject: {fileID: 0}
+  focusMode: 0
+  onShow:
+    m_PersistentCalls:
+      m_Calls: []
+  onHide:
+    m_PersistentCalls:
+      m_Calls: []
+  _scriptName: 
 --- !u!1 &3612012635095979341
 GameObject:
   m_ObjectHideFlags: 0

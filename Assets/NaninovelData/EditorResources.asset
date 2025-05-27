@@ -158,6 +158,9 @@ MonoBehaviour:
     - name: Location2
       pathPrefix: Scripts
       guid: 522d06208d31ae442ac84f95631920d9
+    - name: Location1_1
+      pathPrefix: Scripts
+      guid: 87b19a9e7ded25c42b02accb49e6e124
   - Id: Characters/58aad44c-df70-4f6f-b2ea-398c4e4743df
     Resources:
     - name: SchoolGirl

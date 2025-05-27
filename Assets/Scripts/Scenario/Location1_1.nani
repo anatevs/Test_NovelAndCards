@@ -1,5 +1,3 @@
-@hideChars
-
 @char {MainCharacter}.Idle pos:50,25
 @print "I'm at Location1. I see {NPC1}" author:{MainCharacter}
 

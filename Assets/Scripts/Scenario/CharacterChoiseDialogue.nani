@@ -5,8 +5,8 @@ Choose your character
 @choice "Witch" set:MainCharacter="Witch";NPC1="CollegeStudent";NPC2="SchoolGirl"
 @stop
 
-@char {MainCharacter}.Idle pos:50,25
-@print "I see someone. I think it's {NPC1}" author:{MainCharacter}
+@print "You are {MainCharacter} now. Game is started"
+
 @goto Location1
 
 ; @char {NPC1}.Idle

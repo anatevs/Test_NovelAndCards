@@ -360,6 +360,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LocationButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1273112750515895702, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: scriptName
+      value: Location1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927621714886189478, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: _scriptName
+      value: Location1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183350008628342773, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: _scriptName
+      value: Location1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871007547892020791, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: _scriptName
+      value: Location1
+      objectReference: {fileID: 0}
     - target: {fileID: 7797674664613761101, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
       propertyPath: m_text
       value: Loc1
@@ -367,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 9011359168572061183, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
       propertyPath: scriptName
       value: Location1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011359168572061183, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: scriptText
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -488,6 +508,22 @@ PrefabInstance:
     - target: {fileID: 954728091746991045, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
       propertyPath: m_Name
       value: LocationButton1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273112750515895702, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: scriptName
+      value: Location2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927621714886189478, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: _scriptName
+      value: Location2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183350008628342773, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: _scriptName
+      value: Location2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871007547892020791, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
+      propertyPath: _scriptName
+      value: Location2
       objectReference: {fileID: 0}
     - target: {fileID: 7797674664613761101, guid: a7684e2d472b30647a4616502c40fe06, type: 3}
       propertyPath: m_text

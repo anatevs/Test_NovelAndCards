@@ -1,4 +1,14 @@
-@print "Location2"
+@hideChars
+
+@char {MainCharacter}.Idle pos:50,25
+@print "I'm at Location2. I see {NPC2}" author:{MainCharacter}
+
+@char {MainCharacter}.Idle pos:25,25
+@char {NPC2}.Idle pos:75,25 rotation:0,180
+@print "Hello! Let's play a game. Please answer the question: " author:{NPC2}
+
+@stop
+
 ; @char {MainCharacter}.Idle pos:50,25
 ; @char {NPC2}.Idle pos:75,25 rotation:0,180
 ; @print "Hello! Answer to a question: " author:{NPC2}

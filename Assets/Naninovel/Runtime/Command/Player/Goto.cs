@@ -3,6 +3,8 @@
 using System;
 using System.Linq;
 
+using UnityEngine;
+
 namespace Naninovel.Commands
 {
     /// <summary>

@@ -33,9 +33,9 @@ namespace NaninovelScripts
             {
                 _locationButtons[i].onClick.AddListener(_clickActions[i]);
 
-                var playScript = _locationButtons[i].GetComponent<PlayScriptCustom>();
+                //var playScript = _locationButtons[i].GetComponent<PlayScriptCustom>();
 
-                _locationButtons[i].onClick.AddListener(playScript.Play);
+                //_locationButtons[i].onClick.AddListener(playScript.Play);
             }
         }
 

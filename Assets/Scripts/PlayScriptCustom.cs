@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Naninovel
@@ -22,64 +23,71 @@ namespace Naninovel
 
         private string argument;
 
-        public virtual void Play()
+        private IScriptPlayer _scriptPlayer;
+
+        public virtual async Task Play()
         {
             argument = null;
-            PlayScriptAsync();
+            await PlayScriptAsync();
         }
 
-        public virtual void Play(string argument)
-        {
-            this.argument = argument;
-            PlayScriptAsync();
-        }
+        //public virtual void Play(string argument)
+        //{
+        //    this.argument = argument;
+        //    PlayScriptAsync();
+        //}
 
-        public virtual void Play(float argument)
-        {
-            this.argument = argument.ToString(CultureInfo.InvariantCulture);
-            PlayScriptAsync();
-        }
+        //public virtual void Play(float argument)
+        //{
+        //    this.argument = argument.ToString(CultureInfo.InvariantCulture);
+        //    PlayScriptAsync();
+        //}
 
-        public virtual void Play(int argument)
-        {
-            this.argument = argument.ToString(CultureInfo.InvariantCulture);
-            PlayScriptAsync();
-        }
+        //public virtual void Play(int argument)
+        //{
+        //    this.argument = argument.ToString(CultureInfo.InvariantCulture);
+        //    PlayScriptAsync();
+        //}
 
-        public virtual void Play(bool argument)
-        {
-            this.argument = argument.ToString(CultureInfo.InvariantCulture).ToLower();
-            PlayScriptAsync();
-        }
+        //public virtual void Play(bool argument)
+        //{
+        //    this.argument = argument.ToString(CultureInfo.InvariantCulture).ToLower();
+        //    PlayScriptAsync();
+        //}
 
         protected virtual void Awake()
         {
-            if (PlayOnAwake) Play();
+            //if (PlayOnAwake) Play();
+
+            _scriptPlayer = Engine.GetService<IScriptPlayer>();
         }
 
-        protected virtual void PlayScriptAsync()
+        protected virtual async Task PlayScriptAsync()
         {
-            var player = Engine.GetService<IScriptPlayer>();
-
-            if (!string.IsNullOrEmpty(ScriptName))
+            if (!string.IsNullOrEmpty(scriptName))
             {
-                if (!Engine.GetService<IScriptManager>().TryGetScript(scriptName, out var script))
-                    throw new Error($"Script player failed to start: script with name `{scriptName}` not found.");
+                //player.ResetService();
 
-                var scriptPlaylist = new ScriptPlaylist(script);
+                await _scriptPlayer.PreloadAndPlayAsync(scriptName);
 
-                player.PlayTransient(scriptPlaylist).Forget();
+
+                //if (!Engine.GetService<IScriptManager>().TryGetScript(scriptName, out var script))
+                //    throw new Error($"Script player failed to start: script with name `{scriptName}` not found.");
+
+                //var scriptPlaylist = new ScriptPlaylist(script);
+
+                //player.PlayTransient(scriptPlaylist).Forget();
 
 
                 return;
             }
 
-            if (DisableWaitInput) player.SetWaitingForInputEnabled(false);
+            if (DisableWaitInput) _scriptPlayer.SetWaitingForInputEnabled(false);
 
-            if (!string.IsNullOrWhiteSpace(ScriptText))
+            if (!string.IsNullOrWhiteSpace(scriptText))
             {
-                var text = string.IsNullOrEmpty(argument) ? ScriptText : ScriptText.Replace("{arg}", argument);
-                player.PlayTransient($"`{name}` generated script", text).Forget();
+                var text = string.IsNullOrEmpty(argument) ? scriptText : scriptText.Replace("{arg}", argument);
+                _scriptPlayer.PlayTransient($"`{name}` generated script", text).Forget();
             }
         }
     }
